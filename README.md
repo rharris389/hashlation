@@ -1,4 +1,4 @@
-# Classify
+# Hashlation
 
 ## Installation
 
