@@ -60,7 +60,6 @@ module Hashlation
 
     def sanatize_key(key)
       # If this is to be responses may contain improper keys, uncomment and implement for all attr names
-      # the PrimeTrust API responses only need to be underscored as they do not contain leading integers or dis-allowed characters
       key[0,1] =~ /^[0-9].*/ ? "_#{key.tr(':', '_').underscore}" : key.tr(':', '_').underscore
     end
 
