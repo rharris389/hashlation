@@ -20,10 +20,7 @@ Or install it yourself as:
     Hashlation::Complex -> Hashlation::Complex.new(hash) 
     
     
-    
-    
-
-##Methods
+## Methods
 
 The returned `obj` includes the method `.keys` to list the keys on the object at every level.
 
