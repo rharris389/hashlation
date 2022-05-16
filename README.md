@@ -46,7 +46,21 @@ Usage:
 
 ---
 
-**If `Complex` fails due to inability to read key, please report in Issues. Thanks! **
+** If `Complex` fails due to inability to read a key, please report in GitHub Issues. Thanks! **
+
+---
+
+## Translated Keys Format:
+
+Keys that cannot be set as-is by attr_accessor will be transformed.
+
+### Simple:
+
+- `'Test-Name' -> obj.test_name`
+
+### Complex:
+
+- `'11123:12312' -> obj._11123_12312`
 
 ## Development
 
