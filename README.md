@@ -75,3 +75,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/rharri
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+*Naming credit belongs to my wife, who bales out my inability to name stuff..*
