@@ -16,17 +16,41 @@ Or install it yourself as:
 
     $ gem install hashlation
 
-## Usage
-
-    Hashlation::Simple -> Hashlation::Simple.new(hash) 
-    
-    Handles simple string/symbol keys in conversion as well as singleton_methods. Much faster, but cannot hanlde edge cases in response. 
 
     Hashlation::Complex -> Hashlation::Complex.new(hash) 
     
-    Handles MOST key types in conversion. If you know that your keys will contain leading Integer characters, or ':'.
     
-    **If ::Complex fails due to inability to read key, please report an Issue.**
+    
+    
+
+##Methods
+
+The returned `obj` includes the method `.keys` to list the keys on the object at every level.
+
+---
+
+### Simple 
+
+Handles simple string/symbol keys in conversion as well as singleton_methods. Very fast, but cannot handle edge cases in keys.
+
+Usage:
+
+`obj = Hashlation::Simple.new(hash)`
+
+
+---
+
+### Complex
+
+Handles MOST key types in conversion. If you know that your keys will contain leading Integer characters, or ':' use this method.
+
+Usage:
+
+`obj = Hashlation::Complex.new(hash)`
+
+---
+
+**If `Complex` fails due to inability to read key, please report in Issues. Thanks! **
 
 ## Development
 
