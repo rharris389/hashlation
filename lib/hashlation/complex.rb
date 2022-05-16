@@ -1,4 +1,4 @@
-module Classify
+module Hashlation
   # ---------------------------------------COMPLEX PARSER-----------------------------------------
   # SHOULD process ANY Hash object return, if object if failing, it is likely that a key is not getting transformed
   # correctly, add that character to the transformation string to process correctly.

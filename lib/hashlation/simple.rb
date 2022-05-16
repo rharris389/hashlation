@@ -1,4 +1,4 @@
-module Classify
+module Hashlation
   # ---------------------------------------SIMPLE PARSER-----------------------------------------
   # SHOULD process MOST common hash keys quickly. Will fail on Leading integers on keys and inclusion of ':' characters
   class Simple

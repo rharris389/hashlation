@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
-require_relative "lib/classify/version"
+require_relative "lib/hashlation/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "classify"
-  spec.version       = Classify::VERSION
+  spec.name          = "hashlation"
+  spec.version       = Hashlation::VERSION
   spec.authors       = ["rharris389"]
   spec.email         = ["56176404+rharris389@users.noreply.github.com"]
 
-  spec.summary       = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description   = "TODO: Write a longer description or delete this line."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Simple/Lightweight hash parsing gem. "
+  spec.description   = "View keys at every nesting level, "
+  spec.homepage      = "https://github.com/rharris389/hashlation"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = 'http://rubygems.org'
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/rharris389/hashlation"
+  spec.metadata["changelog_uri"] = "https://github.com/rharris389/hashlation/changelog.md"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

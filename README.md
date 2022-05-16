@@ -5,7 +5,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'classify'
+gem 'hashlation'
 ```
 
 And then execute:
@@ -14,15 +14,15 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install classify
+    $ gem install hashlation
 
 ## Usage
 
-    Classify::Simple -> Classify::Simple.new(hash) 
+    Hashlation::Simple -> Hashlation::Simple.new(hash) 
     
     Handles simple string/symbol keys in conversion as well as singleton_methods. Much faster, but cannot hanlde edge cases in response. 
 
-    Classify::Complex -> Classify::Complex.new(hash) 
+    Hashlation::Complex -> Hashlation::Complex.new(hash) 
     
     Handles MOST key types in conversion. If you know that your keys will contain leading Integer characters, or ':'.
     
@@ -36,7 +36,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/rharris389/classify.
+Bug reports and pull requests are welcome on GitHub at https://github.com/rharris389/hashlation.
 
 ## License
 
