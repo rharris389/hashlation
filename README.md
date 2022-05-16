@@ -17,7 +17,6 @@ Or install it yourself as:
     $ gem install hashlation
 
 
-    Hashlation::Complex -> Hashlation::Complex.new(hash) 
     
     
 ## Methods
