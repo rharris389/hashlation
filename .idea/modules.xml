@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/classify.iml" filepath="$PROJECT_DIR$/.idea/classify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hashlation.iml" filepath="$PROJECT_DIR$/.idea/hashlation.iml" />
     </modules>
   </component>
 </project>
