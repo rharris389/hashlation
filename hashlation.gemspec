@@ -8,8 +8,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ["rharris389"]
   spec.email         = ["56176404+rharris389@users.noreply.github.com"]
 
-  spec.summary       = "Simple/Lightweight hash parsing gem. "
-  spec.description   = "View keys at every nesting level, "
+  spec.summary       = "Simple/Lightweight hash parsing gem."
+  spec.description   = "Quickly parses hashes into objects for cleaner navigation of large response objects.
+                         Hashlation::Simple.new(hash_object) will handle most common string and symbol keys.
+                         Certain characters in a key, such as a leading Integer or a ':' will not translate with Simple.
+                         These must be processed with the Hashlation::Complex.new(hash_object) method. Name credit to my wife."
   spec.homepage      = "https://github.com/rharris389/hashlation"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")
