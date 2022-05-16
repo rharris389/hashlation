@@ -1,9 +1,5 @@
 # Classify
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/classify`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    Classify::Simple -> Classify::Simple.new(hash) 
+    
+    Handles simple string/symbol keys in conversion as well as singleton_methods. Much faster, but cannot hanlde edge cases in response. 
+
+    Classify::Complex -> Classify::Complex.new(hash) 
+    
+    Handles MOST key types in conversion. If you know that your keys will contain leading Integer characters, or ':'.
+    
+    **If ::Complex fails due to inability to read key, please report an Issue.**
 
 ## Development
 
@@ -32,7 +36,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/classify.
+Bug reports and pull requests are welcome on GitHub at https://github.com/rharris389/classify.
 
 ## License
 
