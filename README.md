@@ -1,5 +1,7 @@
 # Hashlation
 
+FAST and VERSATILE hash transformer. Born of the need to more easily read and traverse deeply nested response objects. Faster at 1 to 1 comparisons and more versatile than both OpenStruct and Hashie.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -19,48 +21,27 @@ Or install it yourself as:
 
     
     
-## Methods
+## Usage
 
 The returned `obj` includes the method `.keys` to list the keys on the object at every level.
 
----
+`obj = Hashlation::Any.new(hash)`
 
-### Simple 
-
-Handles simple string/symbol keys in conversion as well as singleton_methods. Very fast, but cannot handle edge cases in keys.
-
-Usage:
-
-`obj = Hashlation::Simple.new(hash)`
-
-
----
-
-### Complex
-
-Handles MOST key types in conversion. If you know that your keys will contain leading Integer characters, or ':' use this method.
-
-Usage:
-
-`obj = Hashlation::Complex.new(hash)`
-
----
-
-** If `Complex` fails due to inability to read a key, please report in GitHub Issues. Thanks! **
+Handles both simple and complex string/symbol keys in translation. Defines singleton_methods for keys ending in '?'.
 
 ---
 
 ## Translated Keys Format:
 
-Keys that cannot be set as-is by attr_accessor will be transformed.
-
-### Simple:
+Keys that cannot be set as-is by attr_accessor will be transformed. For example:
 
 - `'Test-Name' -> obj.test_name`
 
-### Complex:
-
 - `'11123:12312' -> obj._11123_12312`
+
+** If `Any` fails due to inability to read a key, please report in GitHub Issues. Thanks! **
+
+---
 
 ## Development
 

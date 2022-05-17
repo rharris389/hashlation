@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["56176404+rharris389@users.noreply.github.com"]
 
   spec.summary       = "Lightweight response parsing"
-  spec.description   = "Lightweight parser for cleaner navigation of large or deeply nested hashes."
+  spec.description   = "Lightweight parser for cleaner navigation of large and deeply nested hashes."
   spec.homepage      = "https://github.com/rharris389/hashlation"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.4.0")

@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module Hashlation
-  VERSION = "0.1.4"
+  VERSION = "1.1.1"
 end
