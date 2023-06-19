@@ -90,6 +90,11 @@ module Hashlation
     def keys
       instance_variables
     end
+
+    # Test if Key is defined on this object level.
+    def key?(key)
+      instance_variable_defined?("@#{key}")
+    end
   end
 
 end
